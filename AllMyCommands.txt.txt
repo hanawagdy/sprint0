@@ -1,3 +1,4 @@
+
 Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0
 $ git init
 Initialized empty Git repository in E:/sprint 0/.git/
@@ -125,6 +126,21 @@ $ git commit -m 'Second com'
 [README.md 94b3652] Second com
  1 file changed, 5 insertions(+)
  create mode 100644 README.md
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README.md)
+$ ^C
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README.md)
+$ git merge README.md
+Already up to date.
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README.md)
+$ git add .
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README.md)
+$ git commit -m 'Third com'
+[README.md 245ffad] Third com
+ 1 file changed, 130 insertions(+)
 
 Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README.md)
 $
