@@ -305,4 +305,57 @@ $ git push origin master
 Everything up-to-date
 
 Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README)
-$ ?
+$ ?^C
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README)
+$ git add .
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README)
+$ ?git commit -m 'Fifth com'
+[README 7062d91] Fifth com
+ 1 file changed, 163 insertions(+), 1 deletion(-)
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README)
+$ git push origin README
+fatal: unable to access 'https://github.com/hanawagdy/sprint0.git/': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README)
+$ git push origin README
+fatal: unable to access 'https://github.com/hanawagdy/sprint0.git/': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README)
+$ git push origin README
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.74 KiB | 891.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hanawagdy/sprint0.git
+   ad3d4ae..7062d91  README -> README
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README)
+$
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git merge README
+Updating 5b0b6e3..7062d91
+Fast-forward
+ AllMyCommands.txt.txt | 308 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ README.md             |   5 +
+ 2 files changed, 313 insertions(+)
+ create mode 100644 README.md
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git push origin README
+Everything up-to-date
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0)
