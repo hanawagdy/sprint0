@@ -1,0 +1,130 @@
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0
+$ git init
+Initialized empty Git repository in E:/sprint 0/.git/
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git add .
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1.1.txt
+        new file:   3.3.txt
+        new file:   5.1.txt
+        new file:   AllMyCommands.txt.txt
+
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git rm- f 3.3.txt
+git: 'rm-' is not a git command. See 'git --help'.
+
+The most similar command is
+        rm
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git rm -f 3.3.txt
+rm '3.3.txt'
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1.1.txt
+        new file:   5.1.txt
+        new file:   AllMyCommands.txt.txt
+
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git checkout
+fatal: You are on a branch yet to be born
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git add 3.3.txt
+fatal: pathspec '3.3.txt' did not match any files
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git add 3.3.txt
+fatal: pathspec '3.3.txt' did not match any files
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git add .
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ ls
+1.1.txt  5.1.txt  AllMyCommands.txt.txt
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git add 3.3.txt
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git commit -m 'first com'
+[master (root-commit) 5b0b6e3] first com
+ 4 files changed, 265 insertions(+)
+ create mode 100644 1.1.txt
+ create mode 100644 3.3.txt
+ create mode 100644 5.1.txt
+ create mode 100644 AllMyCommands.txt.txt
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git remote add origin https://github.com/hanawagdy/sprint0.git
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 9.31 KiB | 560.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/hanawagdy/sprint0.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ touch README.md
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git branch i. Project Title (title of sprint).
+iv. Acknowledgments (book Chacon, Scott, and Ben Straub. Pro Git. Apress,
+2014.).bash: syntax error near unexpected token `('
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ ii. Getting Started (explanation of content in reop).
+bash: syntax error near unexpected token `('
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ iii. Author (your first name & last name & ID).
+bash: syntax error near unexpected token `('
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ iv. Acknowledgments (book Chacon, Scott, and Ben Straub. Pro Git. Apress,
+bash: syntax error near unexpected token `('
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git branch README.md
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (master)
+$ git checkout README.md
+Switched to branch 'README.md'
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README.md)
+$ git add .
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README.md)
+$ git commit -m 'Second com'
+[README.md 94b3652] Second com
+ 1 file changed, 5 insertions(+)
+ create mode 100644 README.md
+
+Hana@DESKTOP-E3NSM4P MINGW64 /e/sprint 0 (README.md)
+$
